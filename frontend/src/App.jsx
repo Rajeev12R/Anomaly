@@ -39,7 +39,7 @@ const HomePage = () => {
 
   const fetchProcesses = async () => {
     try {
-      const response = await axios.get("http://anomaly-backend.vercel.app/processes");
+      const response = await axios.get("https://anomaly-backend.vercel.app/processes");
       setProcesses(response.data);
     } catch (error) {
       console.error("Error fetching process data", error);
@@ -100,7 +100,7 @@ const ChartsPage = () => {
 
   const fetchProcesses = async () => {
     try {
-      const response = await axios.get("http://anomaly-backend.vercel.app/processes");
+      const response = await axios.get("https://anomaly-backend.vercel.app/processes");
       setProcesses(response.data);
     } catch (error) {
       console.error("Error fetching process data", error);
